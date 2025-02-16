@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Hello, World!">
+    <meta name="author" content="Your Name">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Hello, World!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+
+    <!-- Custom styles -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .jumbotron {
+            background-color: #e9ecef;
+            padding: 2rem 1rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .jumbotron .btn-success {
+            font-size: 1.2rem;
+            padding: 10px 20px;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            color: #28a745;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Hello, World!</h1>
+            <p class="lead">Click the button below to display a "Hello, World!" message.</p>
+            <button class="btn btn-lg btn-success" id="helloButton">Show Message</button>
+            <p id="message"></p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // JavaScript code to handle button click
+        document.getElementById("helloButton").addEventListener("click", function() {
+            const messageElement = document.getElementById("message");
+            messageElement.textContent = "Hello, World!";
+        });
+    </script>
+</body>
+</html>
